@@ -1,0 +1,88 @@
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(to right, #e0eafc, #cfdef3);
+	font-family: "Segoe UI", sans-serif;
+	color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.container {
+	background-color: #ffffffcc;
+	padding: 40px;
+	border-radius: 20px;
+	width: 90%;
+	max-width: 800px;
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	position: relative;
+}
+
+/* Nút đăng xuất */
+.logout-btn {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background-color: #e74c3c;
+	color: white;
+	border: none;
+	padding: 10px 18px;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: bold;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+	background-color: #c0392b;
+}
+
+/* Menu button */
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	justify-content: center;
+	margin-bottom: 30px;
+	margin-top: 40px;
+}
+
+.menu button {
+	background: #2c3e50;
+	color: white;
+	border: none;
+	padding: 12px 20px;
+	font-size: 16px;
+	border-radius: 10px;
+	cursor: pointer;
+	min-width: 160px;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu button:hover {
+	background: #34495e;
+	transform: translateY(-2px);
+}
+
+h1 {
+	font-size: 2rem;
+	margin-bottom: 10px;
+	color: #2c3e50;
+}
+
+#welcome {
+	font-size: 1.1rem;
+	color: #555;
+	margin-top: 10px;
+}

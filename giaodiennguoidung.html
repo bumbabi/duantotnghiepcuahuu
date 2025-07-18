@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Menu Người Dùng - Thư Viện</title>
+		<link rel="stylesheet" href="giaodiennguoidung.css" />
+	</head>
+	<body>
+		<div class="container">
+			<button class="logout-btn" onclick="logout()">Đăng xuất</button>
+
+			<div class="menu">
+				<button onclick="location.href='doimatkhau.html'">Đổi mật khẩu</button>
+				<button onclick="location.href='thuvien.html'">Xem thư viện</button>
+				<button onclick="location.href='nguoidungmuonsach.html'">
+					Mượn sách
+				</button>
+				<button onclick="location.href='lichsumuonsachcuanguoidung.html'">
+					Lịch sử mượn
+				</button>
+				<button onclick="location.href='danhgiacuakhachhang.html'">
+					Đánh giá
+				</button>
+			</div>
+
+			<h1>Hệ thống dành cho người dùng</h1>
+			<div id="welcome"></div>
+		</div>
+
+		<script src="giaodiennguoidung.js"></script>
+	</body>
+</html>

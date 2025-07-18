@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Export Local Storage</title>
+	</head>
+	<body>
+		<h2>Export LocalStorage</h2>
+		<button onclick="exportLocalStorage()">Tải file dữ liệu</button>
+
+		<script>
+			function exportLocalStorage() {
+				const data = {};
+				for (let i = 0; i < localStorage.length; i++) {
+					const key = localStorage.key(i);
+					data[key] = localStorage.getItem(key);
+				}
+
+				const jsonData = JSON.stringify(data, null, 2);
+				const blob = new Blob([jsonData], { type: "application/json" });
+				const url = URL.createObjectURL(blob);
+
+				const a = document.createElement("a");
+				a.href = url;
+				a.download = "localStorage-data.json";
+				a.click();
+				URL.revokeObjectURL(url);
+			}
+		</script>
+	</body>
+</html>

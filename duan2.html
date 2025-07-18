@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Mượn Sách</title>
+		<link rel="stylesheet" href="duan2.css" />
+	</head>
+	<body>
+		<h2></h2>
+		<form id="borrowForm">
+			<label for="name">Họ tên người mượn</label>
+			<input type="text" id="name" required />
+
+			<label for="email">Email</label>
+			<input type="email" id="email" required />
+
+			<label for="phone">Số điện thoại</label>
+			<input type="tel" id="phone" required />
+
+			<label for="bookInput">Tên sách cần mượn</label>
+			<input type="text" id="bookInput" autocomplete="off" required />
+			<div id="suggestions"></div>
+
+			<label for="returnDate">Ngày trả</label>
+			<input type="date" id="returnDate" required />
+
+			<button type="submit">Xác nhận mượn</button>
+		</form>
+
+		<script src="duan2.js"></script>
+	</body>
+</html>

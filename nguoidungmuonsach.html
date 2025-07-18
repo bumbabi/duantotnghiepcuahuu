@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Đăng ký mượn sách</title>
+		<link rel="stylesheet" href="nguoidungmuonsach.css" />
+	</head>
+	<body>
+		<h2>Đăng ký mượn sách</h2>
+
+		<form onsubmit="event.preventDefault(); borrowBook();">
+			<label>Họ tên</label>
+			<input type="text" id="name" required />
+
+			<label>Email</label>
+			<input type="email" id="email" required />
+
+			<label>Số điện thoại</label>
+			<input type="tel" id="phone" required />
+
+			<label>Tên sách cần mượn</label>
+			<div class="relative">
+				<input type="text" id="bookTitle" autocomplete="off" required />
+				<div id="suggestions" class="suggestions-box"></div>
+			</div>
+
+			<label>Ngày trả</label>
+			<input type="date" id="returnDate" required min="2025-07-03" />
+
+			<button type="submit">Mượn sách</button>
+		</form>
+
+		<script src="nguoidungmuonsach.js"></script>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Thư viện sách</title>
+		<link rel="stylesheet" href="thuvien.css" />
+	</head>
+	<body>
+		<h2>Thư viện sách</h2>
+		<div class="filter">
+			<input
+				type="text"
+				id="searchInput"
+				placeholder="Tìm kiếm theo tên sách..."
+			/>
+			<select id="genreFilter">
+				<option value="">Tất cả thể loại</option>
+				<option value="Trinh thám">Trinh thám</option>
+				<option value="Ngôn tình">Ngôn tình</option>
+				<option value="Khoa học viễn tưởng">Khoa học viễn tưởng</option>
+				<option value="Ngụ ngôn triết lý">Triết lý</option>
+				<option value="Giả tưởng kỳ ảo">Giả tưởng kỳ ảo</option>
+				<option value="Tâm lý học">Tâm lý học</option>
+				<option value="Kinh dị">Kinh dị</option>
+				<option value="Tiểu thuyết">Tiểu thuyết</option>
+			</select>
+		</div>
+		<div id="bookGrid" class="grid"></div>
+
+		<script src="thuvien.js"></script>
+	</body>
+</html>

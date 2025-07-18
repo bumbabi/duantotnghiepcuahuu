@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Quản lý sách thư viện</title>
+		<link rel="stylesheet" href="duan1.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Quản lý sách thư viện</h1>
+
+			<input
+				type="text"
+				id="searchInput"
+				placeholder="Tìm kiếm theo tên sách..."
+			/>
+
+			<div class="upload-section">
+				<label for="imageUpload" class="image-frame">
+					<img
+						id="preview"
+						src="https://via.placeholder.com/200x250?text=Bia+Sach"
+						alt="Chọn ảnh bìa"
+					/>
+				</label>
+				<input type="file" id="imageUpload" accept="image/*" hidden />
+
+				<div class="info-fields">
+					<input type="text" id="bookTitle" placeholder="Tên sách" />
+					<input type="text" id="author" placeholder="Tác giả" />
+					<select id="genre">
+						<option value="">-- Chọn thể loại --</option>
+						<option value="Trinh thám">Trinh thám</option>
+						<option value="Ngôn tình">Ngôn tình</option>
+						<option value="Khoa học viễn tưởng">Khoa học viễn tưởng</option>
+						<option value="Ngụ ngôn triết lý">Triết lý</option>
+						<option value="Giả tưởng kỳ ảo">Giả tưởng kỳ ảo</option>
+						<option value="Tâm lý học">Tâm lý học</option>
+						<option value="Kinh dị">Kinh dị</option>
+						<option value="Tiểu thuyết">Tiểu thuyết</option>
+					</select>
+					<input type="text" id="year" placeholder="Năm xuất bản" />
+					<input type="number" id="quantity" placeholder="Số lượng sách" />
+					<button id="saveBtn">Lưu thông tin sách</button>
+				</div>
+			</div>
+
+			<div id="result" class="result"></div>
+		</div>
+
+		<script src="duan1.js"></script>
+	</body>
+</html>

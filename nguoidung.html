@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Đăng nhập / Đăng ký</title>
+		<link rel="stylesheet" href="nguoidung.css" />
+	</head>
+	<body>
+		<div class="container" id="loginForm">
+			<h2>Đăng nhập</h2>
+			<input type="text" id="loginUsername" placeholder="Tên đăng nhập" />
+			<input type="password" id="loginPassword" placeholder="Mật khẩu" />
+			<button onclick="handleLogin()">Đăng nhập</button>
+			<div class="switch-link" onclick="switchForm('register')">
+				Chưa có tài khoản? Đăng ký
+			</div>
+		</div>
+
+		<div class="container" id="registerForm" style="display: none">
+			<h2>Đăng ký</h2>
+			<input type="text" id="registerUsername" placeholder="Tên đăng nhập" />
+			<input type="email" id="registerEmail" placeholder="Email" />
+			<input type="password" id="registerPassword" placeholder="Mật khẩu" />
+			<input
+				type="password"
+				id="registerConfirm"
+				placeholder="Nhập lại mật khẩu"
+			/>
+			<button onclick="handleRegister()">Đăng ký</button>
+			<div class="switch-link" onclick="switchForm('login')">
+				Đã có tài khoản? Đăng nhập
+			</div>
+		</div>
+
+		<script src="nguoidung.js"></script>
+	</body>
+</html>

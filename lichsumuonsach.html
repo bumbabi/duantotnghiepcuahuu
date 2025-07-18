@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Lịch sử mượn sách</title>
+		<link rel="stylesheet" href="lichsumuonsach.css" />
+	</head>
+	<body>
+		<h2>Lịch sử mượn sách</h2>
+		<label for="statusFilter">Lọc theo trạng thái:</label>
+		<select id="statusFilter" onchange="renderHistory()">
+			<option value="all">Tất cả</option>
+			<option value="đang chờ duyệt">Đang chờ duyệt</option>
+			<option value="đang mượn">Đang mượn</option>
+			<option value="đã trả">Đã trả</option>
+		</select>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Họ tên</th>
+					<th>Email</th>
+					<th>Số điện thoại</th>
+					<th>Tên sách</th>
+					<th>Ngày mượn</th>
+					<th>Trạng thái</th>
+					<th>Thao tác</th>
+				</tr>
+			</thead>
+			<tbody id="historyBody"></tbody>
+		</table>
+
+		<script src="lichsumuonsach.js"></script>
+	</body>
+</html>

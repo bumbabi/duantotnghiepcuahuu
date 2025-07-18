@@ -1,0 +1,55 @@
+body {
+	font-family: Arial;
+	background: #f1f1f1;
+	padding: 30px;
+	max-width: 800px;
+	margin: auto;
+}
+h2 {
+	text-align: center;
+}
+.form {
+	background: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+input {
+	width: 100%;
+	padding: 10px;
+	margin: 8px 0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.suggestions {
+	border: 1px solid #ccc;
+	border-top: none;
+	max-height: 150px;
+	overflow-y: auto;
+	background: white;
+	position: absolute;
+	width: calc(100% - 42px);
+	z-index: 10;
+}
+.suggestion-item {
+	padding: 8px;
+	cursor: pointer;
+}
+.suggestion-item:hover {
+	background-color: #eee;
+}
+button {
+	padding: 10px 20px;
+	background: #28a745;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 10px;
+}
+button:hover {
+	background: #218838;
+}
+.relative {
+	position: relative;
+}

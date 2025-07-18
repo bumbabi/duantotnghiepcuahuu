@@ -1,0 +1,37 @@
+body {
+	font-family: Arial;
+	background: #f4f4f4;
+	padding: 30px;
+}
+
+h2 {
+	text-align: center;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #fff;
+	margin-top: 20px;
+}
+
+th,
+td {
+	padding: 10px;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th {
+	background-color: #007bff;
+	color: white;
+}
+
+.expired {
+	background-color: #ffe6e6;
+	color: red;
+}
+
+.ok {
+	background-color: #e6ffe6;
+}

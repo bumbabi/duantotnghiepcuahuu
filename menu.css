@@ -1,0 +1,66 @@
+/* Reset mặc định */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(to right, #e0eafc, #cfdef3);
+	font-family: "Segoe UI", sans-serif;
+	color: #333;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Container bao tất cả */
+.container {
+	width: 90%;
+	max-width: 800px;
+	padding: 40px;
+	background-color: #ffffffcc;
+	border-radius: 20px;
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+/* Menu dạng nút */
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+.menu button {
+	background: #2c3e50;
+	color: white;
+	border: none;
+	padding: 12px 20px;
+	font-size: 16px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	min-width: 150px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu button:hover {
+	background: #34495e;
+	transform: translateY(-2px);
+}
+
+/* Nội dung chính */
+.content h1 {
+	font-size: 2rem;
+	margin-bottom: 15px;
+	color: #2c3e50;
+}
+
+.content p {
+	font-size: 1.1rem;
+	color: #555;
+}
